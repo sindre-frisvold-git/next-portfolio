@@ -9,10 +9,12 @@ export default function test() {
   }
 
   return (
-    <>
-      <h1>This is a test</h1>
+    <div className="flex flex-col flex-none hover:flex-none">
+      <h1 className="text-2xl fint-bold underline">This is a test</h1>
       <p>Number: {testNo}</p>
-      <button onClick={clickHandler}>Add 1</button>
-    </>
+      <button className="bg-red-200 hover:bg-red-400" onClick={clickHandler}>
+        Add 1
+      </button>
+    </div>
   )
 }
