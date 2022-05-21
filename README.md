@@ -1,3 +1,22 @@
+# NextJs Portfolio Project
+## Objective
+My intention with this project is to gain an overview of NextJs and Tailwind while creating a portfolio to host my projects
+## Tech
+- NextJs
+- Tailwind
+
+## Planning
+### Pages
+- Landing
+- Projects
+- About
+- ?social && contact page
+
+### Components
+- Header ?simple nav or menu
+- Footer contact links
+- Layout for custom meta tags
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
