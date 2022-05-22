@@ -1,12 +1,12 @@
-import projects from '../constants/projects'
-function Projects() {
+import Layout from '../components/Layout'
+import Projects from '../components/Projects'
+
+function projects() {
   return (
-    <div>
-      {projects.map((el) => {
-        return <span key={el.title}>{el.title}</span>
-      })}
-    </div>
+    <Layout title="Projects">
+      <Projects />
+    </Layout>
   )
 }
 
-export default Projects
+export default projects
