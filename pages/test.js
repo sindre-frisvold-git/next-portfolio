@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function test() {
+export default function Test() {
   const [testNo, setTestNo] = useState(0)
 
   function clickHandler(e) {
