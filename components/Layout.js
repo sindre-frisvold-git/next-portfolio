@@ -2,6 +2,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useTheme } from 'next-themes'
 
 const Layout = ({ children, ...customMeta }) => {
   const router = useRouter()
@@ -12,9 +13,9 @@ const Layout = ({ children, ...customMeta }) => {
     type: 'website',
     ...customMeta,
   }
-
+  const { theme, setTheme } = useTheme('light')
   return (
-    <div className="content bg-white-400 dark:bg-gray-800">
+    <div className="content">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -33,8 +34,8 @@ const Layout = ({ children, ...customMeta }) => {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
       </Head>
-      <main className="dark:bg-gray-800 w-full">
-        <Header />
+      <main className="bg-slate-100 text-gray-800 dark:bg-gray-800 dark:text-slate-100 w-full">
+        <Header setTheme={setTheme} theme={theme} />
         {children}
         <Footer />
       </main>

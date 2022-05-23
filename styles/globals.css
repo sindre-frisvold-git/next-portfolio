@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
   padding: 0;
@@ -18,4 +19,31 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: background-color .2s
 }
+
+/* highlight effect experiments */
+/* .highlight::after {
+  transition: all .3s;
+  color: rebeccapurple;
+  content: '';
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.highlight::after:hover {
+  width: 10px;
+}
+
+.highlight2 {
+  transition: all .3s;
+  background-image: linear-gradient(#ffd900, #ffd900);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 0% 100%;
+}
+.highlight2:hover {
+  background-size: 100% 100%;
+} */
