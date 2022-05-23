@@ -12,8 +12,9 @@ const Layout = ({ children, ...customMeta }) => {
     type: 'website',
     ...customMeta,
   }
+
   return (
-    <div className="content">
+    <div className="content bg-white-400 dark:bg-gray-800">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
