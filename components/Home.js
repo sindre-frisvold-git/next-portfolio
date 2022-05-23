@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router'
-import About from '../components/About'
-import Layout from '../components/Layout'
+
 import SocialLinks from '../components/SocialLinks'
-import { github } from '../utils/svg'
+
 function Home({ children }) {
   const router = useRouter()
   const svgStyle =
@@ -17,7 +16,7 @@ function Home({ children }) {
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
         <p className="text-3xl md:text-4xl before:bg-red-300">
-          Hi, I'm Sindre.
+          Hi, I&apos;m Sindre.
         </p>
         <p className="text-lg md:text-xl">Full-Stack Software Developer</p>
         <button
