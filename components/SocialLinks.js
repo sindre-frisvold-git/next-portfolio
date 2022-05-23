@@ -1,12 +1,13 @@
-import { github, linkedIn, mail, svg, svgStyle } from '../utils/svg'
+import { codeWars, github, linkedIn, mail, svg, svgStyle } from '../utils/svg'
 
-function SocialLinks() {
+function SocialLinks({ style }) {
   return (
-    <div className="flex flex-col gap-2">
-      {github(svgStyle)}
-      {linkedIn(svgStyle)}
-      {mail(svgStyle)}
-    </div>
+    <>
+      {github(style)}
+      {linkedIn(style)}
+      {mail(style)}
+      {codeWars(style)}
+    </>
   )
 }
 

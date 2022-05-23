@@ -1,20 +1,12 @@
 import Link from 'next/link'
+import { doc } from 'prettier'
 import { useState } from 'react'
 import { darkMode, svgStyle } from '../utils/svg'
 
 function Header() {
-  const [darkModeEnabled, setDarkModeEnabled] = useState(false)
   function clickHandler(e) {
     e.preventDefault()
-    // if (theme === 'dark') setTheme('light')
-    // else setTheme('dark')
-    if (darkModeEnabled) {
-      setDarkModeEnabled(false)
-      document.documentElement.classList.remove('dark')
-    } else {
-      setDarkModeEnabled(true)
-      document.documentElement.classList.add('dark')
-    }
+    document.documentElement.classList.toggle('dark')
   }
   return (
     <nav className="">
