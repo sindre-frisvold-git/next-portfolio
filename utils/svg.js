@@ -1,6 +1,7 @@
-export function linkedIn(style) {
+export function linkedIn(style, onClick = null) {
   return (
     <svg
+      onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -9,9 +10,10 @@ export function linkedIn(style) {
     </svg>
   )
 }
-export function github(style) {
+export function github(style, onClick = null) {
   return (
     <svg
+      onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"
@@ -20,3 +22,18 @@ export function github(style) {
     </svg>
   )
 }
+export function darkMode(style, onClick = null) {
+  return (
+    <svg
+      onClick={onClick}
+      className={style}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+    >
+      <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z" />
+    </svg>
+  )
+}
+
+export const svgStyle =
+  'w-5 transition hover:scale-105 duration-200 fill-gray-800 dark:fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'

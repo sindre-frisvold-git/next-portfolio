@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import { darkMode, svgStyle } from '../utils/svg'
 
-function Header({ theme, setTheme }) {
+function Header() {
   const [darkModeEnabled, setDarkModeEnabled] = useState(false)
   function clickHandler(e) {
     e.preventDefault()
@@ -18,7 +19,10 @@ function Header({ theme, setTheme }) {
   return (
     <nav className="">
       <div className="flex justify-between">
-        <button onClick={clickHandler}>Theme</button>
+        {darkMode(
+          'w-5 transition duration-200 fill-gray-800 dark:fill-slate-100',
+          clickHandler
+        )}
         <Link href="/">
           <a>Home</a>
         </Link>
