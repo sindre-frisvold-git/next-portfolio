@@ -3,6 +3,7 @@ import Header from './Header'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
+import Home from './Home'
 
 const Layout = ({ children, ...customMeta }) => {
   const router = useRouter()
@@ -36,7 +37,7 @@ const Layout = ({ children, ...customMeta }) => {
       </Head>
       <main className="bg-slate-100 text-gray-800 dark:bg-gray-800 dark:text-slate-100 w-full">
         <Header setTheme={setTheme} theme={theme} />
-        {children}
+        <Home>{children}</Home>
         <Footer />
       </main>
     </div>
