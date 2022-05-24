@@ -1,9 +1,10 @@
 import Footer from './Footer'
 import Header from './Header'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { useTheme } from 'next-themes'
+import { useIsMedium, useIsSmall } from '../utils/hooks'
 import Home from './Home'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const Layout = ({ children, ...customMeta }) => {
   const router = useRouter()
@@ -14,7 +15,7 @@ const Layout = ({ children, ...customMeta }) => {
     type: 'website',
     ...customMeta,
   }
-  const { theme, setTheme } = useTheme('light')
+  const isMedium = useIsMedium()
   return (
     <div className="content">
       <Head>
@@ -36,8 +37,8 @@ const Layout = ({ children, ...customMeta }) => {
         <meta property="og:image" content={meta.image} />
       </Head>
       <main className="bg-slate-100 text-gray-800 dark:bg-gray-800 dark:text-slate-100 w-full">
-        <Header setTheme={setTheme} theme={theme} />
-        <Home>{children}</Home>
+        <Header />
+        <Home isMedium={isMedium}>{children}</Home>
         <Footer />
       </main>
     </div>

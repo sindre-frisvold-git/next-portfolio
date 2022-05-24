@@ -1,14 +1,20 @@
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 import SocialLinks from '../components/SocialLinks'
+import { useIsMedium, useIsSmall } from '../utils/hooks'
 
-function Home({ children }) {
+function Home({ children, isMedium }) {
   const router = useRouter()
   const svgStyle =
     'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
+  useEffect(() => {
+    console.log('md', isMedium)
+  })
+
   function clickHandler(e) {
     e.preventDefault()
-    router.push('/about', undefined, { shallow: true })
+    router.push('about', undefined, { shallow: true })
   }
   return (
     <div className="grid place-items-center h-screen grid-cols-1 grid-rows-4 md:grid-cols-2">

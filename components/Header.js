@@ -18,10 +18,10 @@ function Header() {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="about">
+        <Link href="/about">
           <a>About</a>
         </Link>
-        <Link href="projects">
+        <Link href="/projects">
           <a>Projects</a>
         </Link>
       </div>
