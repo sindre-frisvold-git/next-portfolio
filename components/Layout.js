@@ -6,7 +6,7 @@ import Home from './Home'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-const Layout = ({ children, ...customMeta }) => {
+const Layout = ({ children, route, ...customMeta }) => {
   const router = useRouter()
   const meta = {
     title: 'Sindre Frisvold, Full-Stack Developer',

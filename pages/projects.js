@@ -3,7 +3,7 @@ import Projects from '../components/Projects'
 import { pageAnimation } from '../utils/animate'
 
 function projects() {
-  return pageAnimation(<Projects />, 'projects')
+  return <Projects />
 }
 
 export default projects

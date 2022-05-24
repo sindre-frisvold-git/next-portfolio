@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
 import SocialLinks from '../components/SocialLinks'
+import { pageAnimation } from '../utils/animate'
 import { useIsMedium, useIsSmall } from '../utils/hooks'
 
 function Home({ children, isMedium }) {
@@ -38,7 +39,9 @@ function Home({ children, isMedium }) {
         </div>
       </div>
       <div id="content">
-        <AnimatePresence exitBeforeEnter>{children}</AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
+          {pageAnimation(children, router.route)}
+        </AnimatePresence>
       </div>
     </div>
   )
