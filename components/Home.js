@@ -3,23 +3,30 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
 import SocialLinks from '../components/SocialLinks'
-import { pageAnimation } from '../utils/animate'
+import { pageAnimation, projects } from '../utils/animate'
 import { useIsMedium, useIsSmall } from '../utils/hooks'
 
 function Home({ children, isMedium }) {
   const router = useRouter()
   const [routeStyle, setRouteStyle] = useState('')
+  const [routeAnimation, setRouteAnimation] = useState({
+    customAnimation: null,
+  })
   const svgStyle =
-    'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
+    'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400'
   useEffect(() => {
     console.log('md', isMedium)
     switch (router.route) {
       case '/projects':
-        return setRouteStyle('max-h-40')
+        setRouteAnimation({ customAnimation: projects })
+        setRouteStyle('')
+        return
       default:
-        return setRouteStyle('')
+        setRouteStyle('')
+        setRouteAnimation(null)
+        return
     }
-  })
+  }, [])
   function clickHandler(e) {
     e.preventDefault()
     router.push('about', undefined, { shallow: true })
@@ -40,13 +47,13 @@ function Home({ children, isMedium }) {
         >
           Get in Touch
         </button>
-        <div className="absolute left-5 bottom-10 flex flex-col gap-2">
+        <div className="absolute right-5 top-10 md:bottom-10 flex md:flex-col gap-5">
           <SocialLinks style={svgStyle} />
         </div>
       </div>
       <div
         id="content"
-        className={`w-full px-1 text-center col-start-2 row-start-2 overflow-y-auto ${routeStyle}`}
+        className={`w-full px-1 text-center md:col-start-2 md:row-start-2 ${routeStyle}`}
       >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}
