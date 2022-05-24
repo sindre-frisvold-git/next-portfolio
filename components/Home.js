@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
@@ -16,6 +17,7 @@ function Home({ children, isMedium }) {
     e.preventDefault()
     router.push('about', undefined, { shallow: true })
   }
+
   return (
     <div className="grid place-items-center h-screen grid-cols-1 grid-rows-4 md:grid-cols-2">
       <div></div>
@@ -35,7 +37,9 @@ function Home({ children, isMedium }) {
           <SocialLinks style={svgStyle} />
         </div>
       </div>
-      <div id="content">{children}</div>
+      <div id="content">
+        <AnimatePresence exitBeforeEnter>{children}</AnimatePresence>
+      </div>
     </div>
   )
 }

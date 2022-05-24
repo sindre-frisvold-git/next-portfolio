@@ -1,12 +1,9 @@
 import Layout from '../components/Layout'
 import Projects from '../components/Projects'
+import { pageAnimation } from '../utils/animate'
 
 function projects() {
-  return (
-    <Layout title="Projects">
-      <Projects />
-    </Layout>
-  )
+  return pageAnimation(<Projects />, 'projects')
 }
 
 export default projects
