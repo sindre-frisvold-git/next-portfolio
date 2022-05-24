@@ -38,7 +38,10 @@ function Home({ children, isMedium }) {
           <SocialLinks style={svgStyle} />
         </div>
       </div>
-      <div id="content">
+      <div
+        id="content"
+        className="w-full text-center col-start-2 row-start-2 overflow-y-auto"
+      >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}
         </AnimatePresence>
