@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import SocialLinks from '../components/SocialLinks'
 import { pageAnimation } from '../utils/animate'
@@ -8,12 +8,18 @@ import { useIsMedium, useIsSmall } from '../utils/hooks'
 
 function Home({ children, isMedium }) {
   const router = useRouter()
+  const [routeStyle, setRouteStyle] = useState('')
   const svgStyle =
     'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
   useEffect(() => {
     console.log('md', isMedium)
+    switch (router.route) {
+      case '/projects':
+        return setRouteStyle('max-h-40')
+      default:
+        return setRouteStyle('')
+    }
   })
-
   function clickHandler(e) {
     e.preventDefault()
     router.push('about', undefined, { shallow: true })
@@ -40,7 +46,7 @@ function Home({ children, isMedium }) {
       </div>
       <div
         id="content"
-        className="w-full text-center col-start-2 row-start-2 overflow-y-auto"
+        className={`w-full px-1 text-center col-start-2 row-start-2 overflow-y-auto ${routeStyle}`}
       >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}
