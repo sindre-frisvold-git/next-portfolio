@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { projectSvg } from '../utils/svg'
 
 export default function ProjectCard({ title, tech, img, description }) {
   return (
@@ -14,10 +15,10 @@ export default function ProjectCard({ title, tech, img, description }) {
       </div>
       <div className="bg-gray-800 dark:bg-slate-100 text-slate-100 dark:text-gray-800 absolute w-full h-full opacity-90 top-52 hover:top-10 transition-all duration-200 text-left px-2 pt-0.5 text-xl">
         <p>{title}</p>
-        <p className="italic text-center justify mt-2">{description}</p>
-        <div className="absolute bottom-0 flex gap-2 pb-10 justify-center w-full">
+        <p className="italic text-center justify mt-4">{description}</p>
+        <div className="absolute bottom-0 flex gap-2 pb-12 justify-center w-full">
           {tech?.map((el) => (
-            <span key={el.name}>{el()}</span>
+            <span key={el.name}>{el(projectSvg)}</span>
           ))}
         </div>
       </div>

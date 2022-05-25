@@ -16,6 +16,7 @@ const projects = [
       'Getting the visual representation of the frequency bands proved difficult as a lot of modern music lie around the same frequency for major parts of the tune with little variance. This led to a fairly flat, boring looking visualiser. To be brief: I solved this by increasing the sensitivity to frequency amplitude with some exponential math and modifying some of the base attributes.',
       'I also struggled getting the audio stream working initially as I had yet to learn about promises etc. This was overcome with a lot of googling and some good ol’ grit.',
     ],
+    tech: [css3, javaScript, html5],
   },
   {
     title: 'Etch-A-Sketch',
