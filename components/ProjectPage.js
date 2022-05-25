@@ -10,38 +10,40 @@ export default function ProjectPage() {
   // console.log(project)
   return (
     <>
-      <div className="flex justify-center gap-8">
-        <Link href={project?.link || ''}>
-          <span className="sticky -top-10 cursor-pointer text-2xl">
-            Link to project
-          </span>
-        </Link>
-        <Link href={project?.repo || ''}>
-          <span className="sticky -top-10 cursor-pointer text-2xl">
-            Link to repo
-          </span>
-        </Link>
-      </div>
-      <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full tall md:w-full transparent-scroll py-7 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
-        <div className="absolute w-full h-20 left-0 -z-10 opacity-80 px-3 overflow-hidden">
-          <img
-            layout="fill"
-            objectFit="contain"
-            draggable="false"
-            className="w-full saturate-50"
-            src={project?.img}
-            alt="project image"
-          ></img>
+      <div className="md:w-3/4">
+        <div className="flex justify-center gap-8">
+          <Link href={project?.link || ''}>
+            <span className="sticky -top-10 cursor-pointer text-2xl">
+              Link to project
+            </span>
+          </Link>
+          <Link href={project?.repo || ''}>
+            <span className="sticky -top-10 cursor-pointer text-2xl">
+              Link to repo
+            </span>
+          </Link>
         </div>
-        <h2 className="text-2xl pt-20">{project?.title}</h2>
-        <p className="italic text-lg">{project?.description}</p>
-        {project?.para?.map((el, idx) => (
-          <p key={el[0] + idx}>{el}</p>
-        ))}
-        {project?.challenge && <h3 className="text-2xl">Challenges</h3>}
-        {project?.challenge?.map((el, idx) => (
-          <p key={'c' + el[0] + idx}>{el}</p>
-        ))}
+        <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full tall md:w-full transparent-scroll py-7 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
+          <div className="absolute w-full h-20 left-0 -z-10 opacity-80 px-3 overflow-hidden">
+            <img
+              layout="fill"
+              objectFit="contain"
+              draggable="false"
+              className="w-full saturate-50"
+              src={project?.img}
+              alt="project image"
+            ></img>
+          </div>
+          <h2 className="text-2xl pt-20">{project?.title}</h2>
+          <p className="italic text-lg">{project?.description}</p>
+          {project?.para?.map((el, idx) => (
+            <p key={el[0] + idx}>{el}</p>
+          ))}
+          {project?.challenge && <h3 className="text-2xl">Challenges</h3>}
+          {project?.challenge?.map((el, idx) => (
+            <p key={'c' + el[0] + idx}>{el}</p>
+          ))}
+        </div>
       </div>
     </>
   )
