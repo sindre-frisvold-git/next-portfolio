@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      cursor: {
+        'chrome-grab': '-webkit-grab',
+      },
+    },
   },
   darkMode: 'class',
   plugins: [],

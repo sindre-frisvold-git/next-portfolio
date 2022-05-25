@@ -33,7 +33,7 @@ function Home({ children, isMedium }) {
   }
 
   return (
-    <div className="grid place-items-center h-screen grid-cols-1 grid-rows-4 md:grid-cols-2">
+    <div className="grid place-items-center h-screen grid-cols-1 grid-rows-4 md:grid-cols-2 ">
       <div></div>
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
@@ -43,7 +43,7 @@ function Home({ children, isMedium }) {
         <p className="text-lg md:text-xl">Full-Stack Software Developer</p>
         <button
           onClick={clickHandler}
-          className="transition bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded px-2 py-1 mt-2"
+          className="transition bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded px-2 py-1 mt-2 cursor-pointer"
         >
           Get in Touch
         </button>

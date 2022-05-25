@@ -6,12 +6,16 @@ const projects = [
     link: 'https://sindre-frisvold-git.github.io/calculator/',
   },
   {
-    title: 'PlanBuddy, FInal Project',
+    title: 'PlanBuddy, Final Project',
     link: 'https://github.com/sindre-frisvold-git/planbuddy',
     tech: [react, redux, sass, html5, javaScript],
   },
   {
     title: 'Etch-A-Skecth',
+    link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
+  },
+  {
+    title: 'Audio Visualiser',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
   },
 ]
