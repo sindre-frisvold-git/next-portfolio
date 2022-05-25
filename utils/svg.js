@@ -197,4 +197,4 @@ export function sass(style = svgStyle, onClick = null, alt = null) {
 export const svgStyle =
   'w-5 transition duration-200 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
 export const projectSvg =
-  'w-5 transition duration-200 hover:scale-105 dark:fill-gray-800 fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
+  'w-6 transition duration-200 hover:scale-105 dark:fill-gray-800 fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
