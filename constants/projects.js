@@ -22,17 +22,26 @@ const projects = [
     title: 'Etch-A-Sketch',
     img: '/etch.png',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
+    description: 'An experiment in dom manipulation and responsive design.',
   },
   {
     title: 'PlanBuddy, Final Project',
     img: '/planBuddy.png',
     link: 'https://github.com/sindre-frisvold-git/planbuddy',
+    description: 'A full-stack app to help you plan your learning.',
     tech: [react, redux, sass, html5, javaScript],
   },
   {
     title: 'Calculator',
     img: '/calc.png',
     link: 'https://sindre-frisvold-git.github.io/calculator/',
+    description: 'A simple calculator with more than just basic functionality.',
+    para: [
+      'Early on while learning JavaScript I was tasked with building a calculator. I decided I wanted to make it more than just a simple 4 operator calculator and thought through what I would want out of a basic calculator.',
+      'Some of the things I wanted to code in was the ability to press operators twice or more to repeat the operation, do the same thing but with different operators in the same computation and allow multiple presses of “=” to repeat the previous calculation. Furthermore I wanted to be able to write messages on the display like we did in primary school by turning it upside down.',
+      'To achieve these tasks I made some very impure functions with a complicated conditional tree. I also learned more about dom manipulation while playing with adding and removing classes to flip the calculator and switch the display on and off.',
+      'One thing I would do differently if I was to build this again would be to be a lot more particular about separating concerns; it really does need some heavy spring-refactoring. In the end it worked and at that stage I was quite happy about achieving every functionality I wanted.',
+    ],
   },
 ]
 export default projects
