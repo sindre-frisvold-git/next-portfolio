@@ -23,7 +23,7 @@ function Projects() {
         // onMouseDown={mouseDownHandler}
         ref={projectScroll}
         className="overflow-y-scroll max-h-96 snap-parent scroll-smooth transparent-scroll border-x-2 border-solid border-gray-800 dark:border-slate-100 px-4"
-        onScroll={scrollHandler}
+        // onScroll={scrollHandler}
       >
         {projects.map((el, idx) => {
           return (

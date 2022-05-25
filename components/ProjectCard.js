@@ -17,7 +17,7 @@ export default function ProjectCard({ title, tech, img, description }) {
       <div className="absolute h-full w-full">
         <Image
           layout="fill"
-          objectFit="contain"
+          objectFit="fill"
           draggable="false"
           className="h-full w-full saturate-50"
           src={img}

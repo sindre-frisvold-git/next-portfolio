@@ -10,7 +10,7 @@ const projects = [
       'I had some extra time at the end of my programming foundations course and I decided to use it to build a small project.',
       'Original as I am I love music, I also have an interest in generated graphics so I landed on an audio visualiser for my build.',
       'To complete this project in a limited timeframe I decided to focus mainly on the logic and found some canvas lightning code snippets to use for the graphics. I didn’t like how it looked initially so I modified it to look more like the beam of a pod racer than spreading lightning.',
-      'In the end I landed on the design you can see with sliders for modifying the behavior and frequency band selectors for each attribute.',
+      'In the end I landed on the design you can see, with sliders for modifying the behavior and frequency band selectors for each attribute.',
     ],
     challenge: [
       'Getting the visual representation of the frequency bands proved difficult as a lot of modern music lie around the same frequency for major parts of the tune with little variance. This led to a fairly flat, boring looking visualiser. To be brief: I solved this by increasing the sensitivity to frequency amplitude with some exponential math and modifying some of the base attributes.',
@@ -22,7 +22,8 @@ const projects = [
     title: 'Etch-A-Sketch',
     img: '/etch.png',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
-    description: 'An experiment in dom manipulation and responsive design.',
+    description: 'An experiment in DOM manipulation and responsive design.',
+    tech: [css3, javaScript, html5],
   },
   {
     title: 'PlanBuddy',
@@ -42,6 +43,7 @@ const projects = [
       'To achieve these tasks I made some very impure functions with a complicated conditional tree. I also learned more about dom manipulation while playing with adding and removing classes to flip the calculator and switch the display on and off.',
       'One thing I would do differently if I was to build this again would be to be a lot more particular about separating concerns; it really does need some heavy spring-refactoring. In the end it worked and at that stage I was quite happy about achieving every functionality I wanted.',
     ],
+    tech: [css3, javaScript, html5],
   },
 ]
 export default projects
