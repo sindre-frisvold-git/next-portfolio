@@ -47,7 +47,7 @@ function Home({ children, isMedium }) {
         >
           Get in Touch
         </button>
-        <div className="absolute right-5 top-10 md:bottom-10 flex md:flex-col gap-5">
+        <div className="absolute right-5 top-10 md:bottom-10 flex md:flex-col gap-5 z-10">
           <SocialLinks style={svgStyle} />
         </div>
       </div>
