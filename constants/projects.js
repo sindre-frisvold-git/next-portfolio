@@ -7,7 +7,7 @@ const projects = [
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
   },
   {
-    title: 'Etch-A-Skecth',
+    title: 'Etch-A-Sketch',
     img: '/etch.png',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
   },

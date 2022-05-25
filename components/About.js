@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="text-justify px-2 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full md:w-3/4 transparent-scroll py-7 text-xl border-gray-800 dark: border-slate-100 border-x-2 border-solid">
+    <div className="text-justify px-2 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full md:w-3/4 transparent-scroll py-7 text-xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
       <h1 className="text-2xl">About</h1>
       <p>
         Hi, I am Sindre, a software developer with a passion for problem solving
