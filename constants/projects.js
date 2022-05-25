@@ -5,6 +5,7 @@ const projects = [
     title: 'Audio-Visualiser',
     img: '/audio-visualiser.png',
     link: 'https://sindre-frisvold-git.github.io/audio-visualizer/',
+    repo: 'https://github.com/sindre-frisvold-git/audio-visualizer',
     description: 'A visual representation of a JavaScript AudioStream',
     para: [
       'I had some extra time at the end of my programming foundations course and I decided to use it to build a small project.',
@@ -22,6 +23,7 @@ const projects = [
     title: 'Etch-A-Sketch',
     img: '/etch.png',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
+    repo: 'https://github.com/sindre-frisvold-git/etch-a-sketch',
     description: 'An experiment in DOM manipulation and responsive design.',
     tech: [css3, javaScript, html5],
   },
@@ -29,6 +31,7 @@ const projects = [
     title: 'PlanBuddy',
     img: '/planBuddy.png',
     link: 'https://github.com/sindre-frisvold-git/planbuddy',
+    repo: 'https://github.com/sindre-frisvold-git/planbuddy',
     description: 'A full-stack app to help you plan your learning.',
     tech: [react, redux, sass, html5, javaScript],
   },
@@ -36,6 +39,7 @@ const projects = [
     title: 'Calculator',
     img: '/calc.png',
     link: 'https://sindre-frisvold-git.github.io/calculator/',
+    repo: 'https://github.com/sindre-frisvold-git/calculator',
     description: 'A simple calculator with more than just basic functionality.',
     para: [
       'Early on while learning JavaScript I was tasked with building a calculator. I decided I wanted to make it more than just a simple 4 operator calculator and thought through what I would want out of a basic calculator.',
