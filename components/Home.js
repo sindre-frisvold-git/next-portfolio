@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
@@ -44,7 +44,7 @@ function Home({ children, isMedium }) {
         <p className="text-lg md:text-3xl">Full-Stack Software Developer</p>
         <button
           onClick={clickHandler}
-          className="transition bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded-lg px-4 py-2 mt-2 cursor-pointer"
+          className="transition text-2xl bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded-lg px-4 py-2 mt-2 cursor-pointer"
         >
           Get in Touch
         </button>

@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import { doc } from 'prettier'
-import { useState } from 'react'
-import { darkMode, svgStyle } from '../utils/svg'
+import { darkMode } from '../utils/svg'
 
 function Header() {
   function clickHandler(e) {

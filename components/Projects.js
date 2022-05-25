@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import projects from '../constants/projects'
 import ProjectCard from './ProjectCard'

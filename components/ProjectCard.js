@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { projectSvg } from '../utils/svg'
 
 export default function ProjectCard({ title, tech, img, description }) {
   const [active, setActive] = useState(false)
