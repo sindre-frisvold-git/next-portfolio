@@ -1,5 +1,5 @@
 import ProjectPage from '../components/ProjectPage'
 
-export default function calculator() {
+export default function etchASketch() {
   return <ProjectPage />
 }

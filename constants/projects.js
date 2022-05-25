@@ -2,7 +2,7 @@ import { css3, html5, javaScript, react, redux, sass } from '../utils/svg'
 
 const projects = [
   {
-    title: 'Audio Visualiser',
+    title: 'Audio-Visualiser',
     img: '/audio-visualiser.png',
     link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
     description: 'A visual representation of a JavaScript AudioStream',
@@ -25,7 +25,7 @@ const projects = [
     description: 'An experiment in dom manipulation and responsive design.',
   },
   {
-    title: 'PlanBuddy, Final Project',
+    title: 'PlanBuddy',
     img: '/planBuddy.png',
     link: 'https://github.com/sindre-frisvold-git/planbuddy',
     description: 'A full-stack app to help you plan your learning.',
