@@ -13,7 +13,7 @@ function Home({ children, isMedium }) {
     customAnimation: null,
   })
   const svgStyle =
-    'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400'
+    'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400 cursor-pointer'
   useEffect(() => {
     console.log('md', isMedium)
     switch (router.route) {
@@ -29,7 +29,7 @@ function Home({ children, isMedium }) {
   }, [])
   function clickHandler(e) {
     e.preventDefault()
-    router.push('about', undefined, { shallow: true })
+    router.push('mailto:sinfr91@gmail.com', undefined, { shallow: true })
   }
 
   return (
