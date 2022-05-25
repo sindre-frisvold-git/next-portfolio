@@ -38,8 +38,8 @@ function Projects() {
   return (
     <motion.div>
       <div
-        onMouseDown={mouseDownHandler}
-        ref={projectScroll}
+        // onMouseDown={mouseDownHandler}
+        // ref={projectScroll}
         className="overflow-y-scroll max-h-96 snap-parent scroll-smooth "
       >
         {projects.map((el) => {
