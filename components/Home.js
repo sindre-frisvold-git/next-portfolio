@@ -38,7 +38,8 @@ function Home({ children, isMedium }) {
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
         <p className="text-3xl md:text-4xl before:bg-red-300">
-          Hi, I&apos;m Sindre.
+          {router.route === '/' && "Hi, I'm "}Sindre
+          {router.route === '/' && '.'}
         </p>
         <p className="text-lg md:text-xl">Full-Stack Software Developer</p>
         <button

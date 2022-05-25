@@ -27,19 +27,24 @@ function Projects() {
       >
         {projects.map((el, idx) => {
           return (
-            <ProjectCard key={el.title + idx} title={el.title} tech={el.tech} />
+            <ProjectCard
+              key={el.title + idx}
+              title={el.title}
+              tech={el.tech}
+              img={el.img}
+            />
           )
         })}
       </div>
       <div className="hidden md:flex md:flex-col justify-center gap-y-5 ml-2">
         <button
-          className="flex justify-center w-5 h-10 text-3xl text-gray-800 rounded-md bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300"
+          className="flex justify-center w-4 h-10 text-3xl text-slate-100 dark:text-gray-800 rounded-md bg-gray-800 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300"
           onClick={scrollUp}
         >
           <div>&uarr;</div>
         </button>
         <button
-          className="flex justify-center w-5 h-10 text-3xl text-gray-800 rounded-md bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300"
+          className="flex justify-center w-4 h-10 text-3xl text-slate-100 dark:text-gray-800 rounded-md bg-gray-800 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300"
           onClick={scrollDown}
         >
           <div>&darr;</div>
