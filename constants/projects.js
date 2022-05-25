@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Audio-Visualiser',
     img: '/audio-visualiser.png',
-    link: 'https://sindre-frisvold-git.github.io/etch-a-sketch/',
+    link: 'https://sindre-frisvold-git.github.io/audio-visualizer/',
     description: 'A visual representation of a JavaScript AudioStream',
     para: [
       'I had some extra time at the end of my programming foundations course and I decided to use it to build a small project.',
