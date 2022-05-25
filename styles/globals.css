@@ -22,7 +22,7 @@ a {
 
 * {
   box-sizing: border-box;
-  transition: background-color .2s
+  transition: background-color .2s;
 }
 
 .transparent-scroll {
