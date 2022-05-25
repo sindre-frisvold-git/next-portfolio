@@ -3,6 +3,8 @@ import projects from '../constants/projects'
 import ProjectCard from './ProjectCard'
 function Projects() {
   const projectScroll = useRef(null)
+  const scrollStyle =
+    'flex justify-center w-7 h-14 text-5xl text-slate-100 dark:text-gray-800 rounded-md bg-gray-800 dark:bg-slate-100 hover:bg-gray-600 dark:hover:bg-slate-300'
 
   // function scrollHandler(e) {
   //   console.log(e.deltaY)
@@ -37,16 +39,10 @@ function Projects() {
         })}
       </div>
       <div className="hidden md:flex md:flex-col justify-center gap-y-5 ml-2">
-        <button
-          className="flex justify-center w-4 h-10 text-3xl text-slate-100 dark:text-gray-800 rounded-md bg-gray-800 dark:bg-slate-100 hover:bg-gray-600 dark:hover:bg-slate-300"
-          onClick={scrollUp}
-        >
+        <button onClick={scrollUp} className={scrollStyle}>
           <div>&uarr;</div>
         </button>
-        <button
-          className="flex justify-center w-4 h-10 text-3xl text-slate-100 dark:text-gray-800 rounded-md bg-gray-800 dark:bg-slate-100 hover:bg-gray-600 dark:hover:bg-slate-300"
-          onClick={scrollDown}
-        >
+        <button onClick={scrollDown} className={scrollStyle}>
           <div>&darr;</div>
         </button>
       </div>
