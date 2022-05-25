@@ -30,7 +30,7 @@ export default function ProjectCard({ title, tech, img, description }) {
           onMouseLeave={leaveHandler}
           onFocus={hoverHandler}
           onBlur={leaveHandler}
-          className={`bg-gray-800 dark:bg-slate-100 text-slate-100 dark:text-gray-800 absolute w-full h-full opacity-90 top-48 md:top-80 hover:top-10 transition-all duration-200 text-left px-4 pt-3 text-2xl ${
+          className={`bg-gray-800 dark:bg-slate-100 text-slate-100 dark:text-gray-800 absolute w-full h-full opacity-90 top-48 md:top-80 hover:top-10 transition-all duration-200 text-left px-4 pt-2 md:pt-3 text-2xl ${
             active ? 'cursor-pointer' : ''
           }`}
         >

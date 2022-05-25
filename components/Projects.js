@@ -11,11 +11,11 @@ function Projects() {
   // }
 
   function scrollUp() {
-    projectScroll.current.scrollTop -= 150
+    projectScroll.current.scrollTop -= 300
     console.log(projectScroll.current.scrollTop)
   }
   function scrollDown() {
-    projectScroll.current.scrollTop += 150
+    projectScroll.current.scrollTop += 300
     console.log(projectScroll.current.scrollTop)
   }
   return (
