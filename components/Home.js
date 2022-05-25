@@ -48,13 +48,13 @@ function Home({ children, isMedium }) {
         >
           Get in Touch
         </button>
-        <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8  z-10">
+        <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8 z-10">
           <SocialLinks style={svgStyle} />
         </div>
       </div>
       <div
         id="content"
-        className={`w-full px-1 text-center rounded-md row-start-4 md:col-start-2 md:row-start-2  ${routeStyle}`}
+        className={`tall w-full px-1 text-center rounded-md row-start-4 md:col-start-2 md:row-start-2  ${routeStyle}`}
       >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}

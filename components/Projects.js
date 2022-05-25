@@ -18,7 +18,7 @@ function Projects() {
     console.log(projectScroll.current.scrollTop)
   }
   return (
-    <div className="md:flex justify-center md:w-3/4">
+    <div className="md:flex justify-center md:w-3/4 tall">
       <div
         // onMouseDown={mouseDownHandler}
         ref={projectScroll}
