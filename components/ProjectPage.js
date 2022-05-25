@@ -23,25 +23,28 @@ export default function ProjectPage() {
             </span>
           </Link>
         </div>
-        <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full tall md:w-full transparent-scroll py-7 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
-          <div className="absolute w-full h-20 left-0 -z-10 opacity-80 px-3 overflow-hidden">
+        <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full tall md:w-full transparent-scroll py-8 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
+          <div className=" w-full h-40 md:h-96 left-0 -z-10 opacity-80 px-3 overflow-hidden">
             <img
               layout="fill"
-              objectFit="contain"
               draggable="false"
               className="w-full saturate-50"
               src={project?.img}
               alt="project image"
             ></img>
           </div>
-          <h2 className="text-2xl pt-20">{project?.title}</h2>
+          <h2 className="text-2xl ">{project?.title}</h2>
           <p className="italic text-lg">{project?.description}</p>
           {project?.para?.map((el, idx) => (
-            <p key={el[0] + idx}>{el}</p>
+            <p className="text-xl md:text-2xl" key={el[0] + idx}>
+              {el}
+            </p>
           ))}
           {project?.challenge && <h3 className="text-2xl">Challenges</h3>}
           {project?.challenge?.map((el, idx) => (
-            <p key={'c' + el[0] + idx}>{el}</p>
+            <p className="text-xl md:text-2xl" key={'c' + el[0] + idx}>
+              {el}
+            </p>
           ))}
         </div>
       </div>
