@@ -12,9 +12,11 @@ export default function ProjectPage() {
   return (
     <>
       <Link href={project?.link || ''}>
-        <p className="sticky -top-10 cursor-pointer">Link to project</p>
+        <p className="sticky -top-10 cursor-pointer text-2xl">
+          Link to project
+        </p>
       </Link>
-      <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-96 md:w-3/4 transparent-scroll py-7 text-xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
+      <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-96 md:w-3/4 transparent-scroll py-7 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
         <div className="absolute w-full h-20 left-0 -z-10 opacity-80 px-3 overflow-hidden">
           <img
             layout="fill"

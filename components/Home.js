@@ -37,14 +37,14 @@ function Home({ children, isMedium }) {
       <div></div>
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
-        <p className="text-3xl md:text-4xl before:bg-red-300">
+        <p className="text-3xl md:text-6xl before:bg-red-300">
           {router.route === '/' && "Hi, I'm "}Sindre
           {router.route === '/' && '.'}
         </p>
-        <p className="text-lg md:text-xl">Full-Stack Software Developer</p>
+        <p className="text-lg md:text-3xl">Full-Stack Software Developer</p>
         <button
           onClick={clickHandler}
-          className="transition bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded px-2 py-1 mt-2 cursor-pointer"
+          className="transition bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded-lg px-4 py-2 mt-2 cursor-pointer"
         >
           Get in Touch
         </button>

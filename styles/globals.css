@@ -36,6 +36,9 @@ a {
 .snap-child {
   scroll-snap-align: start;
 }
+.tall {
+  max-height: 36rem;
+}
 /* highlight effect experiments */
 /* .highlight::after {
   transition: all .3s;

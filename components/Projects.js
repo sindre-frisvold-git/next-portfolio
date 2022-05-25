@@ -18,11 +18,11 @@ function Projects() {
     console.log(projectScroll.current.scrollTop)
   }
   return (
-    <div className="md:flex justify-center">
+    <div className="md:flex justify-center md:w-3/4">
       <div
         // onMouseDown={mouseDownHandler}
         ref={projectScroll}
-        className="overflow-y-scroll max-h-96 snap-parent scroll-smooth transparent-scroll border-x-2 border-solid border-gray-800 dark:border-slate-100 px-4"
+        className="overflow-y-scroll tall md:w-full md:max-w-xl snap-parent scroll-smooth transparent-scroll border-x-2 border-solid border-gray-800 dark:border-slate-100 px-4"
         // onScroll={scrollHandler}
       >
         {projects.map((el, idx) => {
