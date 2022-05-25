@@ -13,7 +13,7 @@ function Home({ children, isMedium }) {
     customAnimation: null,
   })
   const svgStyle =
-    'w-5 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400 cursor-pointer'
+    'w-5 md:w-8 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400 cursor-pointer'
   useEffect(() => {
     console.log('md', isMedium)
     switch (router.route) {
@@ -48,7 +48,7 @@ function Home({ children, isMedium }) {
         >
           Get in Touch
         </button>
-        <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8 md:gap-5 z-10">
+        <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8  z-10">
           <SocialLinks style={svgStyle} />
         </div>
       </div>
