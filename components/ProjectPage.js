@@ -11,11 +11,18 @@ export default function ProjectPage() {
   // console.log(project)
   return (
     <>
-      <Link href={project?.link || ''}>
-        <p className="sticky -top-10 cursor-pointer text-2xl">
-          Link to project
-        </p>
-      </Link>
+      <div className="flex justify-center gap-8">
+        <Link href={project?.link || ''}>
+          <span className="sticky -top-10 cursor-pointer text-2xl">
+            Link to project
+          </span>
+        </Link>
+        <Link href={project?.repo || ''}>
+          <span className="sticky -top-10 cursor-pointer text-2xl">
+            Link to repo
+          </span>
+        </Link>
+      </div>
       <div className="overflow-y-scroll relative text-justify px-4 space-y-3 leading-7 overflow-y-scroll h-72 md:h-full tall md:w-full transparent-scroll py-7 text-2xl border-gray-800 dark:border-slate-100 border-x-2 border-solid">
         <div className="absolute w-full h-20 left-0 -z-10 opacity-80 px-3 overflow-hidden">
           <img
