@@ -83,6 +83,7 @@ export function javaScript(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
     >
@@ -96,6 +97,7 @@ export function html5(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
     >
@@ -108,6 +110,7 @@ export function css3(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
     >
@@ -120,6 +123,7 @@ export function tailwind(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       viewBox="0 0 1000 1000"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -139,6 +143,7 @@ export function redux(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       viewBox="0 0 256 244"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
@@ -151,6 +156,7 @@ export function nextJs(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
       key={alt?.key}
+      onClick={onClick}
       className={style}
       viewBox=".5 -.2 1023 1024.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -165,6 +171,7 @@ export function socketIo(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
@@ -186,6 +193,7 @@ export function sass(style = svgStyle, onClick = null, alt = null) {
     <svg
       key={alt?.key}
       className={style}
+      onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 384"
     >
