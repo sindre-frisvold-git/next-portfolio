@@ -5,9 +5,9 @@ import ProjectCard from './ProjectCard'
 function Projects() {
   const projectScroll = useRef(null)
 
-  function scrollHandler(e) {
-    console.log(e.deltaY)
-  }
+  // function scrollHandler(e) {
+  //   console.log(e.deltaY)
+  // }
 
   function scrollUp() {
     projectScroll.current.scrollTop -= 150
@@ -22,7 +22,7 @@ function Projects() {
       <div
         // onMouseDown={mouseDownHandler}
         ref={projectScroll}
-        className="overflow-y-scroll max-h-96 snap-parent scroll-smooth transparent-scroll border-x-2 border-solid border-gray-800 dark:border-slate-100 px-2"
+        className="overflow-y-scroll max-h-96 snap-parent scroll-smooth transparent-scroll border-x-2 border-solid border-gray-800 dark:border-slate-100 px-4"
         onScroll={scrollHandler}
       >
         {projects.map((el, idx) => {
