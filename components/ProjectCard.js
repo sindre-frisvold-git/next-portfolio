@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { projectSvg } from '../utils/svg'
 
 export default function ProjectCard({ title, tech, img, description }) {
   const [active, setActive] = useState(false)
@@ -12,7 +13,7 @@ export default function ProjectCard({ title, tech, img, description }) {
   }
   return (
     // <Link>
-    <div className="h-96 md:w-full relative rounded-md my-1 dark:bg-gray-700 overflow-hidden scroll-mt-9 mt-9 mb-9 snap-child mx-auto border-solid border-slate-300 dark:border-gray-700">
+    <div className="h-60 md:h-96 md:w-full relative rounded-md my-1 dark:bg-gray-700 overflow-hidden scroll-mt-9 mt-9 mb-9 snap-child mx-auto border-solid border-slate-300 dark:border-gray-700">
       <div className="absolute h-full w-full">
         <Image
           layout="fill"
@@ -29,7 +30,7 @@ export default function ProjectCard({ title, tech, img, description }) {
           onMouseLeave={leaveHandler}
           onFocus={hoverHandler}
           onBlur={leaveHandler}
-          className={`bg-gray-800 dark:bg-slate-100 text-slate-100 dark:text-gray-800 absolute w-full h-full opacity-90 top-80 hover:top-10 transition-all duration-200 text-left px-4 pt-2 text-2xl ${
+          className={`bg-gray-800 dark:bg-slate-100 text-slate-100 dark:text-gray-800 absolute w-full h-full opacity-90 top-48 md:top-80 hover:top-10 transition-all duration-200 text-left px-4 pt-2 text-2xl ${
             active ? 'cursor-pointer' : ''
           }`}
         >
