@@ -1,6 +1,7 @@
-export function linkedIn(style = svgStyle, onClick = null) {
+export function linkedIn(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
@@ -10,9 +11,10 @@ export function linkedIn(style = svgStyle, onClick = null) {
     </svg>
   )
 }
-export function github(style = svgStyle, onClick = null) {
+export function github(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +24,10 @@ export function github(style = svgStyle, onClick = null) {
     </svg>
   )
 }
-export function darkMode(style = svgStyle, onClick = null) {
+export function darkMode(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +38,10 @@ export function darkMode(style = svgStyle, onClick = null) {
   )
 }
 
-export function mail(style = svgStyle, onClick = null) {
+export function mail(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       onClick={onClick}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
@@ -47,9 +51,10 @@ export function mail(style = svgStyle, onClick = null) {
     </svg>
   )
 }
-export function codeWars(style = svgStyle, onClick = null) {
+export function codeWars(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       onClick={onClick}
       viewBox="0 0 24 24"
@@ -60,9 +65,10 @@ export function codeWars(style = svgStyle, onClick = null) {
     </svg>
   )
 }
-export function react(style = svgStyle, onClick = null) {
+export function react(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +78,10 @@ export function react(style = svgStyle, onClick = null) {
     </svg>
   )
 }
-export function javaScript(style = svgStyle) {
+export function javaScript(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -84,9 +91,10 @@ export function javaScript(style = svgStyle) {
   )
 }
 
-export function html5(style = svgStyle) {
+export function html5(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -95,9 +103,10 @@ export function html5(style = svgStyle) {
     </svg>
   )
 }
-export function css3(style = svgStyle) {
+export function css3(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -106,9 +115,10 @@ export function css3(style = svgStyle) {
     </svg>
   )
 }
-export function tailwind(style = svgStyle) {
+export function tailwind(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       viewBox="0 0 1000 1000"
       xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +134,10 @@ export function tailwind(style = svgStyle) {
     </svg>
   )
 }
-export function redux(style = svgStyle) {
+export function redux(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       viewBox="0 0 256 244"
       xmlns="http://www.w3.org/2000/svg"
@@ -136,9 +147,10 @@ export function redux(style = svgStyle) {
     </svg>
   )
 }
-export function nextJs(style = svgStyle) {
+export function nextJs(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       viewBox=".5 -.2 1023 1024.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -148,9 +160,10 @@ export function nextJs(style = svgStyle) {
     </svg>
   )
 }
-export function socketIo(style = svgStyle) {
+export function socketIo(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
@@ -168,9 +181,10 @@ export function socketIo(style = svgStyle) {
     </svg>
   )
 }
-export function sass(style = svgStyle) {
+export function sass(style = svgStyle, onClick = null, alt = null) {
   return (
     <svg
+      key={alt?.key}
       className={style}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 384"

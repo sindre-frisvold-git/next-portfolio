@@ -33,7 +33,7 @@ function Home({ children, isMedium }) {
   }
 
   return (
-    <div className="grid place-items-center h-screen grid-cols-1 grid-rows-4 md:grid-cols-2 ">
+    <div className="grid place-items-center h-screen grid-cols-1 grid-rows-5 md:grid-rows-4 md:grid-cols-2 ">
       <div></div>
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
@@ -47,13 +47,13 @@ function Home({ children, isMedium }) {
         >
           Get in Touch
         </button>
-        <div className="absolute right-5 top-10 md:bottom-10 flex md:flex-col gap-5 z-10">
+        <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8 md:gap-5 z-10">
           <SocialLinks style={svgStyle} />
         </div>
       </div>
       <div
         id="content"
-        className={`w-full px-1 text-center rounded-md md:col-start-2 md:row-start-2 transparent-scroll ${routeStyle}`}
+        className={`w-full px-1 text-center rounded-md row-start-4 md:col-start-2 md:row-start-2  ${routeStyle}`}
       >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}
