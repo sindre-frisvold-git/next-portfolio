@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      'max-h': {
+        tall: '36rem',
+      },
       cursor: {
         'chrome-grab': '-webkit-grab',
       },
