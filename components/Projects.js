@@ -32,6 +32,7 @@ function Projects() {
               title={el.title}
               tech={el.tech}
               img={el.img}
+              description={el.description}
             />
           )
         })}
