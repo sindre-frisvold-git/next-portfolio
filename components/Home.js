@@ -53,7 +53,7 @@ function Home({ children, isMedium }) {
       </div>
       <div
         id="content"
-        className={`w-full px-1 text-center md:col-start-2 md:row-start-2 ${routeStyle}`}
+        className={`w-full px-1 text-center rounded-md md:col-start-2 md:row-start-2 transparent-scroll ${routeStyle}`}
       >
         <AnimatePresence exitBeforeEnter>
           {pageAnimation(children, router.route)}
