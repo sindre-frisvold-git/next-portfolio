@@ -34,13 +34,15 @@ export default function ProjectCard({ title, tech, img, description }) {
             active ? 'cursor-pointer' : ''
           }`}
         >
-          <p className="text-3xl">{title}</p>
-          <p className="italic text-center justify mt-4">{description}</p>
+          <p className="text-2xl md:text-3xl">{title}</p>
+          <p className=" text-lg md:text-2xl italic text-center justify mt-4">
+            {description}
+          </p>
           <div className="absolute bottom-0 flex left-0 gap-6 pb-12 justify-center w-full">
             {tech?.map((el) => (
               <span key={el.name}>
                 {el(
-                  'w-8 transition duration-200 hover:scale-105 dark:fill-gray-800 fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
+                  'w-6 md:w-8 transition duration-200 hover:scale-105 dark:fill-gray-800 fill-slate-100 hover:fill-gray-500 hover:dark:fill-green-400'
                 )}
               </span>
             ))}
