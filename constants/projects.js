@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'PlanBuddy',
     img: '/planBuddy.png',
-    link: 'https://github.com/sindre-frisvold-git/planbuddy',
+    link: 'https://planbuddy-sindre.herokuapp.com/',
     repo: 'https://github.com/sindre-frisvold-git/planbuddy',
     description: 'A full-stack app to help you plan your learning.',
     para: [
