@@ -12,11 +12,12 @@ function Home({ children, isMedium }) {
   const [routeAnimation, setRouteAnimation] = useState({
     customAnimation: null,
   })
+  const { route } = router
   const svgStyle =
     'w-5 md:w-8 transition duration-100 hover:scale-105 fill-gray-800 dark:fill-slate-100 hover:fill-sky-500 hover:dark:fill-green-400 cursor-pointer'
   useEffect(() => {
-    console.log('md', isMedium)
-    switch (router.route) {
+    // console.log('md', isMedium)
+    switch (route) {
       case '/projects':
         setRouteAnimation({ customAnimation: projects })
         setRouteStyle('')
@@ -29,7 +30,7 @@ function Home({ children, isMedium }) {
   }, [])
   function clickHandler(e) {
     e.preventDefault()
-    router.push('mailto:sinfr91@gmail.com', undefined, { shallow: true })
+    router.push('projects', undefined, { shallow: true })
   }
 
   return (
@@ -46,7 +47,7 @@ function Home({ children, isMedium }) {
           onClick={clickHandler}
           className="transition text-2xl bg-sky-300 dark:bg-green-400 hover:bg-sky-400 dark:hover:bg-green-300 dark:text-gray-800 duration-400 rounded-lg px-4 py-2 mt-2 cursor-pointer"
         >
-          Get in Touch
+          {route === '/' ? 'See My Projects' : 'Get in Touch'}
         </button>
         <div className="absolute grow-0 md:h-60 md:w-10 right-5 md:left-5 top-12 md:top-5 flex md:flex-col gap-8 z-10">
           <SocialLinks style={svgStyle} />
