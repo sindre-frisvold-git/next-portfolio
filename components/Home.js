@@ -30,7 +30,13 @@ function Home({ children, isMedium }) {
   }, [])
   function clickHandler(e) {
     e.preventDefault()
-    router.push('projects', undefined, { shallow: true })
+    router.push(
+      route === '/' ? 'projects' : 'mailto:sinfr91@gmail.com',
+      undefined,
+      {
+        shallow: true,
+      }
+    )
   }
 
   return (
@@ -39,8 +45,7 @@ function Home({ children, isMedium }) {
       <div className="hidden md:block"></div>
       <div className="hero max-w-md ">
         <p className="text-3xl md:text-6xl before:bg-red-300">
-          {router.route === '/' && "Hi, I'm "}Sindre
-          {router.route === '/' && '.'}
+          Hi, I&apos;m Sindre.
         </p>
         <p className="text-lg md:text-3xl">Full-Stack Software Developer</p>
         <button

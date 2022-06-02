@@ -10,7 +10,12 @@ export default function ProjectPage() {
   // console.log(project)
   return (
     <>
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 md:relative">
+        <Link href="/projects">
+          <div className="md:absolute text-xl p-2 md:px-1  cursor-pointer">
+            Return to Projects
+          </div>
+        </Link>
         <div className="flex justify-center gap-8">
           <Link href={project?.link || ''}>
             <span className="sticky -top-10 cursor-pointer text-2xl">
