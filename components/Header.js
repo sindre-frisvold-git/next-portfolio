@@ -13,14 +13,14 @@ function Header() {
           'w-5 md:w-7 transition duration-200 fill-gray-800 dark:fill-slate-100 cursor-pointer',
           clickHandler
         )}
-        <Link href="/">
-          <a>Home</a>
+        <Link href="/projects">
+          <a>Projects</a>
         </Link>
         <Link href="/about">
           <a>About</a>
         </Link>
-        <Link href="/projects">
-          <a>Projects</a>
+        <Link href="/">
+          <a>Home</a>
         </Link>
       </div>
     </nav>
