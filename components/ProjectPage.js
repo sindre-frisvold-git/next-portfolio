@@ -12,18 +12,18 @@ export default function ProjectPage() {
     <>
       <div className="md:w-3/4 md:relative">
         <Link href="/projects">
-          <div className="md:absolute text-xl p-2 md:px-1  cursor-pointer">
+          <div className="md:absolute text-xl p-2 md:px-1 cursor-pointer hover:text-sky-500 hover:dark:text-green-400 transition duration-200">
             Return to Projects
           </div>
         </Link>
         <div className="flex justify-center gap-8">
           <Link href={project?.link || ''}>
-            <span className="sticky -top-10 cursor-pointer text-2xl">
+            <span className="sticky -top-10 cursor-pointer text-2xl hover:text-sky-500 hover:dark:text-green-400 transition duration-200">
               Link to project
             </span>
           </Link>
           <Link href={project?.repo || ''}>
-            <span className="sticky -top-10 cursor-pointer text-2xl">
+            <span className="sticky -top-10 cursor-pointer text-2xl hover:text-sky-500 hover:dark:text-green-400 transition duration-200">
               Link to repo
             </span>
           </Link>
